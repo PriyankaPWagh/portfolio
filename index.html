@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Kalam:wght@300;400;700&family=Modak&family=Poetsen+One&family=Rubik+Distressed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- contact me -->
+    <!-- Load EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Load config -->
+    <script src="config.js"></script>
+  </head>
+  <body>
+    <div class="intro-page">
+      <div
+        class="circle left"
+        style="background: linear-gradient(45deg, red, purple)"
+      ></div>
+
+      <div class="content">
+        <div id="logo">
+          <img src="p4image.png" />
+        </div>
+        <h1 class="word" id="namskar">नमस्कार</h1>
+        <h1 class="word" id="hello">Hello</h1>
+        <h1 class="word" id="namaste">नमस्ते</h1>
+        <h1 class="word" id="bonjo">स्वागत है</h1>
+      </div>
+      <div
+        class="circle right"
+        style="background: linear-gradient(45deg, green, yellow)"
+      ></div>
+    </div>
+    <div class="main-page" style="display: none">
+      <div class="container">
+        <div
+          class="circle left"
+          style="background: linear-gradient(45deg, red, purple)"
+        ></div>
+        <!-- Central Image -->
+        <div class="center-image">
+          <img src="p4image.png" alt="Profile" />
+        </div>
+
+        <!-- Navigation Boxes -->
+        <div class="nav-box" id="skills">My Skills</div>
+        <div class="nav-box" id="about">About Me</div>
+        <div class="nav-box" id="contact">Contact Me</div>
+        <div class="nav-box" id="projects">My Project</div>
+        <div class="nav-box" id="resume">My Resume</div>
+
+        <!-- Animated Lines -->
+        <div class="line" id="line-skills"></div>
+        <div class="line" id="line-about"></div>
+        <div class="line" id="line-contact"></div>
+        <div class="line" id="line-projects"></div>
+        <div class="line" id="line-resume"></div>
+        <div
+          class="circle right"
+          style="background: linear-gradient(45deg, green, yellow)"
+        ></div>
+      </div>
+    </div>
+    <!-- Section Overlay Pages -->
+
+    <div id="section-page-styling">
+      <!-- skill page -->
+      <div class="section-page" id="page-skills">
+        <button class="close-btn">✕</button>
+        <h2>
+          MY Skills <br />
+          <div class="arrow">➝</div>
+        </h2>
+
+        <div class="skills-circle-container">
+          <div class="skill-circle" style="--percent: 70; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="html-bgremove.png" alt="html" />
+              <p>Html - 70%</p>
+            </div>
+          </div>
+
+          <div class="skill-circle" style="--percent: 75; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="css.png" alt="css" />
+              <p>css - 75%</p>
+            </div>
+          </div>
+
+          <div class="skill-circle" style="--percent: 65; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="javascript bg remove.png" alt="js" />
+              <p>js - 65%</p>
+            </div>
+          </div>
+          <div class="skill-circle" style="--percent: 75; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="react bg remove.png" alt="react" />
+              <p>React 75%</p>
+            </div>
+          </div>
+          <div class="skill-circle" style="--percent: 65; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="nodejs bg remove.png" alt="nodejs" />
+              <p>Nodejs - 65%</p>
+            </div>
+          </div>
+          <div class="skill-circle" style="--percent: 70; --color: #61dafb">
+            <svg>
+              <circle cx="100" cy="100" r="90"></circle>
+              <circle cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="icon-label">
+              <img src="mongodb bg remove.png" alt="mongodb" />
+              <p>Mongodb - 70%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about page  -->
+      <div class="section-page" id="page-about">
+        <button class="close-btn">✕</button>
+
+        <div class="shapes-container">
+          <h2>
+            About Me<br />
+            <div class="arrow">➝</div>
+          </h2>
+
+          <div class="about-me-content">
+            <div class="about-me-para">
+              <h3><span class="typing-animation">Web Dev</span></h3>
+              <p>
+                I am a passionate and dedicated web developer with over two
+                years of experience in coding, specializing in the
+                <span class="project-p">MERN</span> (MongoDB, Express.js,
+                React.js, Node.js) stack. Throughout my learning journey, I have
+                built several real-world projects including
+                <span class="project-p">
+                  Zerodha, Wonderlust, and Siddhbali Hospital</span
+                >, which have helped me deepen my understanding of full-stack
+                development. I am always eager to learn new technologies and
+                enhance my skills. I have a strong curiosity to understand how
+                things work and enjoy solving complex problems through clean and
+                efficient code. My goal is to grow as a developer by
+                continuously exploring the latest trends in web development and
+                applying them to build innovative and user-centric solutions.
+              </p>
+            </div>
+
+            <div class="about-me-img"><img src="priyankahirewagh.jpeg" /></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact page -->
+      <div class="section-page" id="page-contact">
+        <button class="close-btn">✕</button>
+        <h2>
+          Contact Me <br />
+          <div class="arrow">➝</div>
+        </h2>
+        <section class="contact-section">
+          <form id="contact-form">
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email_id"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message 🚀</button>
+          </form>
+        </section>
+
+        <!-- Success Modal -->
+        <div class="modal-overlay" id="success-modal">
+          <div class="modal-box">
+            <h2>Thank you! 🙌</h2>
+            <p>Your message has been successfully sent.</p>
+          </div>
+        </div>
+
+        <!-- Error Modal -->
+        <div class="modal-overlay" id="error-modal">
+          <div class="modal-box">
+            <h2>Oops! ❌</h2>
+            <p>Something went wrong. Please try again later.</p>
+          </div>
+        </div>
+
+        <!--  Loading Spinner -->
+        <div class="loading-overlay" id="loading-spinner">
+          <div class="spinner"></div>
+          <p>Sending...</p>
+        </div>
+      </div>
+
+      <!-- resume page-->
+      <section>
+        <div class="section-page" id="page-resume">
+          <button class="close-btn">✕</button>
+
+          <h2>
+            My Resume<br />
+            <div class="arrow">➝</div>
+          </h2>
+          <div class="resume-container">
+            <div class="resume-preview">
+              <img src="resume.png" alt="Resume Preview" />
+            </div>
+            <div class="resume-details">
+              <p>
+                Here's a quick preview of
+                <span class="project-p">my resume</span>. Click the button below
+                to download the full version.
+              </p>
+              <a href="my resume.pdf" class="download-btn" download
+                >📄 Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project page -->
+      <div class="section-page" id="page-projects">
+        <button class="close-btn">✕</button>
+        <h2>
+          My Projects <br />
+          <div class="arrow">➝</div>
+        </h2>
+        <div class="project-container">
+          <div id="project1">
+            <a href="https://novanectar-internship-1.onrender.com"
+              ><div class="project1">
+                <img src="healthy food.png" alt="img1" />
+                <h1>Healthy diet Project</h1>
+                <p>develop a healthy diet clone</p>
+              </div></a
+            >
+            <a href="https://zerodha-di09.onrender.com/"
+              ><div class="project1">
+                <img src="zerodha img.png" alt="img2" />
+                <h1>Zerodha Project</h1>
+                <p>develop a zerodha project</p>
+              </div></a
+            >
+            <a href="https://major-project-wonderlust.onrender.com/">
+              <div class="project1">
+                <img src="wonderlust.png" alt="img3" />
+                <h1>Wonderlust Project</h1>
+                <p>develop a hotels project</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
