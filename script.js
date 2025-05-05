@@ -1,3 +1,4 @@
+
 // Sequential display of words
 const words = [
   { id: "namskar", duration: 1000 },
@@ -110,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // skill section animation
 document.getElementById("skills").addEventListener("click", () => {
+  
   const page = document.getElementById("page-skills");
   page.style.display = "block";
 
@@ -159,3 +161,8 @@ form.addEventListener("submit", function (e) {
       }, 3000);
     });
 });
+
+
+
+
+
